@@ -856,8 +856,8 @@ function InitializeEnvironment()
         $global:envSettingsXml = [xml](cat $global:environmentSettingsFile)
     }
 
-    $global:AzureAccountName = GetOrSetEnvSetting "AzureAccountName" "GetAzureAccountInfo"
-    ValidateLoginCredentials
+#    $global:AzureAccountName = GetOrSetEnvSetting "AzureAccountName" "GetAzureAccountInfo"
+#    ValidateLoginCredentials
 
     if ([string]::IsNullOrEmpty($global:SubscriptionId))
     {
