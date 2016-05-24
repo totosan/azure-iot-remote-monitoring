@@ -141,6 +141,7 @@
     <Compile Include="Configurations\ConfigurationProvider.cs" />
     <Compile Include="Configurations\EnvironmentDescription.cs" />
     <Compile Include="Configurations\IConfigurationProvider.cs" />
+    <Compile Include="Deployment\Custom\DeploymentHelper.cs" />
     <Compile Include="DeviceSchema\CommandHistorySchemaHelper.cs" />
     <Compile Include="DeviceSchema\CommandSchemaHelper.cs" />
     <Compile Include="DeviceSchema\DeviceSchemaHelper.cs" />
@@ -188,6 +189,9 @@
     <None Include="Deployment\ConfigurationTemplate.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Deployment\Custom\deploy.ps1" />
+    <None Include="Deployment\Custom\parameters.json" />
+    <None Include="Deployment\Custom\template.json" />
     <None Include="Deployment\DeploymentLib.ps1" />
     <None Include="Deployment\PrepareIoTSample.ps1" />
     <None Include="Deployment\LocalMonitoring.json" />
@@ -197,6 +201,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
