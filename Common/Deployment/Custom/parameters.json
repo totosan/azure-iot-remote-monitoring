@@ -54,7 +54,7 @@
             "value": "https://suiteiot.blob.core.windows.net/webdeploy/webjobhost.zip?sv=2015-04-05&sr=b&sig=NvC3ts%2BsYz1wSA773ig8GtH%2F3pgAJI0kklMNO7cG9oE%3D&st=2016-05-20T13%3A42%3A30Z&se=2016-05-21T13%3A47%3A30Z&sp=r"
         },
         "webSku": {
-            "value": "Basic_B1"
+            "value": "Basic"
         },
         "webWorkerSize": {
             "value": 0
@@ -63,7 +63,7 @@
             "value": 2
         },
         "webJobSku": {
-            "value": "Basic_B1"
+            "value": "Basic"
         },
         "webJobWorkerSize": {
             "value": 0
