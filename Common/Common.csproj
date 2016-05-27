@@ -189,8 +189,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Deployment\Custom\deploy.ps1" />
-    <None Include="Deployment\Custom\parameters.json" />
-    <None Include="Deployment\Custom\template.json" />
+    <None Include="Deployment\Custom\parameters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Deployment\Custom\template.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Deployment\DeploymentLib.ps1" />
     <None Include="Deployment\PrepareIoTSample.ps1" />
     <None Include="Deployment\LocalMonitoring.json" />
