@@ -737,21 +737,21 @@
           ]
         }
       },
-      "resources": [
-        {
-          "type": "extensions",
-          "name": "MSDeploy",
-          "apiVersion": "[variables('webVersion')]",
-          "properties": {
-            "packageUri": "[parameters('packageUri')]",
-            "connectionString": "",
-            "dbType": ""
-          },
-          "dependsOn": [
-            "[resourceId('Microsoft.Web/Sites', variables('webSiteName'))]"
-          ]
-        }
-      ],
+      //"resources": [
+      //  {
+      //    "type": "extensions",
+      //    "name": "MSDeploy",
+      //    "apiVersion": "[variables('webVersion')]",
+      //    "properties": {
+      //      "packageUri": "[parameters('packageUri')]",
+      //      "connectionString": "",
+      //      "dbType": ""
+      //    },
+      //    "dependsOn": [
+      //      "[resourceId('Microsoft.Web/Sites', variables('webSiteName'))]"
+      //    ]
+      //  }
+      //],
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', variables('webPlanName'))]",
         "[resourceId('Microsoft.Storage/storageAccounts', parameters('suiteName'))]",
@@ -844,21 +844,21 @@
           ]
         }
       },
-      "resources": [
-        {
-          "type": "extensions",
-          "name": "MSDeploy",
-          "apiVersion": "[variables('webVersion')]",
-          "properties": {
-            "packageUri": "[parameters('webJobPackageUri')]",
-            "connectionString": "",
-            "dbType": ""
-          },
-          "dependsOn": [
-            "[resourceId('Microsoft.Web/Sites', variables('webJobSiteName'))]"
-          ]
-        }
-      ],
+      //"resources": [
+      //  {
+      //    "type": "extensions",
+      //    "name": "MSDeploy",
+      //    "apiVersion": "[variables('webVersion')]",
+      //    "properties": {
+      //      "packageUri": "[parameters('webJobPackageUri')]",
+      //      "connectionString": "",
+      //      "dbType": ""
+      //    },
+      //    "dependsOn": [
+      //      "[resourceId('Microsoft.Web/Sites', variables('webJobSiteName'))]"
+      //    ]
+      //  }
+      //],
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', variables('webJobPlanName'))]",
         "[resourceId('Microsoft.Storage/storageAccounts', parameters('suiteName'))]",
