@@ -856,47 +856,30 @@ function InitializeEnvironment()
         $global:envSettingsXml = [xml](cat $global:environmentSettingsFile)
     }
 
-    $global:AzureAccountName = GetOrSetEnvSetting "AzureAccountName" "GetAzureAccountInfo"
-    ValidateLoginCredentials
+#    $global:AzureAccountName = GetOrSetEnvSetting "AzureAccountName" "GetAzureAccountInfo"
+#    ValidateLoginCredentials
 
-    if ([string]::IsNullOrEmpty($global:SubscriptionId))
-    {
-        $global:SubscriptionId = GetEnvSetting "SubscriptionId"
+    # if ([string]::IsNullOrEmpty($global:SubscriptionId))
+    # {
+    #     $global:SubscriptionId = GetEnvSetting "SubscriptionId"
         
-        if ([string]::IsNullOrEmpty($global:SubscriptionId) -or $global:SubscriptionId -eq "not set" )
-        {
-            $global:SubscriptionId = "not set"
-            $subscriptions = Get-AzureRMSubscription
-            Write-Host "Available subscriptions:"
-            $global:index = 0
-            $selectedIndex = -1
-            Write-Host ($subscriptions | Format-Table -Property @{name="Option";expression={$global:index;$global:index+=1}},SubscriptionName, SubscriptionId -au | Out-String)
+    #     if ([string]::IsNullOrEmpty($global:SubscriptionId) -or $global:SubscriptionId -eq "not set" )
+    #     {
+    #         $global:SubscriptionId = "not set"
+    #         $subscriptions = Get-AzureRMSubscription
+    #         Write-Host "Available subscriptions:"
+    #         $global:index = 0
+    #         $selectedIndex = -1
+    #         Write-Host ($subscriptions | Format-Table -Property @{name="Option";expression={$global:index;$global:index+=1}},SubscriptionName, SubscriptionId -au | Out-String)
+                                
+    #         $global:SubscriptionId = $subscriptions[0].SubscriptionId
             
-            while (!$subscriptions.SubscriptionId.Contains($global:SubscriptionId))
-            {
-                try
-                {
-                    [int]$selectedIndex = Read-Host "Select an option from the above list"
-                }
-                catch
-                {
-                    Write-Host "Must be a number"
-                    continue
-                }
-                
-                if ($selectedIndex -lt 1 -or $selectedIndex -gt $subscriptions.length)
-                {
-                    continue
-                }
-                
-                $global:SubscriptionId = $subscriptions[$selectedIndex - 1].SubscriptionId
-            }
-            UpdateEnvSetting "SubscriptionId" $global:SubscriptionId
-        }
-    }
+    #         UpdateEnvSetting "SubscriptionId" $global:SubscriptionId
+    #     }
+    # }
     
-    Select-AzureSubscription -SubscriptionId $global:SubscriptionId
-    Select-AzureRmSubscription -SubscriptionId $global:SubscriptionId
+    # Select-AzureSubscription -SubscriptionId $global:SubscriptionId
+    # Select-AzureRmSubscription -SubscriptionId $global:SubscriptionId
 
     if ([string]::IsNullOrEmpty($global:AllocationRegion))
     {

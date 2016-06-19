@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "aadTenant": {
+            "value": "d390d36a-b8ca-4ab8-a40f-a4d842c38390"
+        },
+        "aadInstance": {
+            "value": "https://login.microsoftonline.com/{0}"
+        },
+        "aadClientId": {
+            "value": "f486067a-1b6c-4de7-b7a5-b09f0283a91a"
+        },
+        "storageEndpointSuffix": {
+            "value": "core.windows.net"
+        },
+        "bingMapsLocation": {
+            "value": "westus"
+        },
+        "suiteName": {
+            "value": "suiteiot"
+        },
+        "docDBName": {
+            "value": "suiteiot"
+        },
+        "docDBSku": {
+            "value": "Standard"
+        },
+        "storageName": {
+            "value": "suiteiot"
+        },
+        "storageAccountSku": {
+            "value": "Standard_LRS"
+        },
+        "iotHubName": {
+            "value": "suiteiot"
+        },
+        "iotHubSku": {
+            "value": "S1"
+        },
+        "iotHubTier": {
+            "value": "Standard"
+        },
+        "sbName": {
+            "value": "suiteiot"
+        },
+        "sbSku": {
+            "value": 1
+        },
+        "packageUri": {
+            "value": "https://suiteiot.blob.core.windows.net/webdeploy/web.zip?sv=2015-04-05&sr=b&sig=%2Fs4L9HasEWcaazgIfhO9gMlrFVhc6J%2B6wBAlbFIuGPw%3D&st=2016-05-20T13%3A42%3A08Z&se=2016-05-21T13%3A47%3A08Z&sp=r"
+        },
+        "webJobPackageUri": {
+            "value": "https://suiteiot.blob.core.windows.net/webdeploy/webjobhost.zip?sv=2015-04-05&sr=b&sig=NvC3ts%2BsYz1wSA773ig8GtH%2F3pgAJI0kklMNO7cG9oE%3D&st=2016-05-20T13%3A42%3A30Z&se=2016-05-21T13%3A47%3A30Z&sp=r"
+        },
+        "webSku": {
+            "value": "Basic"
+        },
+        "webWorkerSize": {
+            "value": 0
+        },
+        "webWorkerCount": {
+            "value": 2
+        },
+        "webJobSku": {
+            "value": "Basic"
+        },
+        "webJobWorkerSize": {
+            "value": 0
+        },
+        "webJobWorkerCount": {
+            "value": 2
+        },
+        "asaStartBehavior": {
+            "value": "JobStartTime"
+        }
+    }
+}
