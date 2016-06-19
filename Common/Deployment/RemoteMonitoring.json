@@ -61,7 +61,7 @@
         },
         "storageAccountSku": {
             "type": "string",
-            "defaultValue": "Standard_GRS",
+            "defaultValue": "Standard_LRS",
             "metadata": {
                 "description": "The storage Sku"
             }
@@ -74,7 +74,7 @@
         },
         "iotHubSku": {
             "type": "string",
-            "defaultValue": "S2",
+            "defaultValue": "S1",
             "metadata": {
                 "description": "The Iothub Sku"
             }
@@ -130,7 +130,7 @@
         },
         "webJobSku": {
             "type": "string",
-            "defaultValue": "Standard",
+            "defaultValue": "B1",
             "metadata": {
                 "description": "The Sku type of the webjob"
             }
