@@ -189,7 +189,10 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Deployment\Custom\deploy.ps1" />
-    <None Include="Deployment\Custom\parameters.json">
+    <None Include="Deployment\Custom\parameters_AlegriGroup.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Deployment\Custom\parameters_totosan.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Deployment\Custom\template.json">
