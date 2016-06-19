@@ -160,7 +160,8 @@
   "variables": {
     "location": "[resourceGroup().location]",
     "storageVersion": "2015-05-01-preview",
-    "storageId": "[resourceId('Microsoft.Storage/storageAccounts', parameters('suiteName'))]",
+    "storageName":  "[toLower(parameters('suiteName'))]",
+    "storageId": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]",
     "sbVersion": "[providers('Microsoft.Servicebus', 'namespaces').apiVersions[0]]",
     "ehOutName": "[concat(parameters('suiteName'), '-ehout')]",
     "ehRuleOutName": "[concat(parameters('suiteName'), '-ehruleout')]",
