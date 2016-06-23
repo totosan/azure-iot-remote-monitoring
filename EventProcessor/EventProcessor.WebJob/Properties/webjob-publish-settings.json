@@ -1,4 +1,5 @@
-﻿{
+﻿
+{
   "$schema": "http://schemastore.org/schemas/json/webjob-publish-settings.json",
   "webJobName": "EventProcessor-WebJob",
   "startTime": null,
