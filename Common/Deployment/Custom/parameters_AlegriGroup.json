@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "aadTenant": {
-      "value": "fd5c7fd1-7b6e-4dc8-9c55-ce064dfedfb4"
+      "value": "e11afd88-3b60-43b3-94c7-1c398a428d39"
     },
     "aadInstance": {
       "value": "https://login.microsoftonline.com/{0}"
     },
     "aadClientId": {
-      "value": "d280cdab-dea9-4264-abf4-f4ef9599ff44"
+      "value": "b19d6239-5527-4575-9d5f-27b6ebbe2cb1"
     },
     "storageEndpointSuffix": {
       "value": "core.windows.net"
