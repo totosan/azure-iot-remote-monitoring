@@ -3,7 +3,7 @@ param (
 [string]$resourceGroupName
 )
 $output = ''
-. "$(Split-Path $MyInvocation.MyCommand.Path)\DeploymentLib.ps1"
+. "$(Split-Path $MyInvocation.MyCommand.Path)\..\DeploymentLib.ps1"
 if (StopExistingStreamAnalyticsJobs $resourceGroupName)
 {
     $output = 'LastOutputEventTime'
