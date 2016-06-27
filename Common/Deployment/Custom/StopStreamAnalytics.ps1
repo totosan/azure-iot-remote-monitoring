@@ -11,3 +11,4 @@ if (StopExistingStreamAnalyticsJobs $resourceGroupName)
 {
 	$output = 'JobStartTime'
 }
+	Write-Host "##vso[task.setvariable variable=output]$output"
