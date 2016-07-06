@@ -188,6 +188,7 @@
     <None Include="Deployment\ConfigurationTemplate.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Deployment\Custom\RepairWebJobPackage.ps1" />
     <None Include="Deployment\Custom\StopStreamAnalytics.ps1" />
     <None Include="Deployment\Custom\deploy.ps1" />
     <None Include="Deployment\Custom\parameters_AlegriGroup.json">
