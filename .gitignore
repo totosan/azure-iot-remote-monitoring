@@ -202,3 +202,4 @@ VendingMachineSample/packages/*
 
 # Merge file remains
 *.orig
+/WebJobHost/Properties/PublishProfiles
